@@ -43,14 +43,15 @@ def favorite_restaurant():
     favorite_restaurant['address'] = input("What is the address? ")
     favorite_restaurant['favorite_dish'] = input('What is your favorite dish? ')
     # Add all three of these as key value pairs in your new dictionary, ala:
-    #    favorite_restaurant  = {
-    #        "name": "Subway",
-    #        "address" : "116th & Broadway, NY 10016",
-    #        "favorite_dish" : "Chicken BLT Sandwich"
-    #    }
+
+    favorite_restaurant  = {
+           "name": "Subway",
+           "address" : "116th & Broadway, NY 10016",
+            "favorite_dish" : "Chicken BLT Sandwich"
+        }
 
     # 2.3 TODO: Print out your dictionary to make sure it populated correctly
-    # print(favorite_restaurant)
+    print(favorite_restaurant)
 
     # Oh no, the restaurant stopped serving the user's favorite dish!
     # 2.4 TODO: Remove the `favorite_dish` key/value pair from the dictionary
