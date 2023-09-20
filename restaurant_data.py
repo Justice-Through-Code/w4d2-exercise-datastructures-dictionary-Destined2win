@@ -50,7 +50,7 @@ def favorite_restaurant():
     #    }
 
     # 2.3 TODO: Print out your dictionary to make sure it populated correctly
-    print(favorite_restaurant)
+    # print(favorite_restaurant)
 
     # Oh no, the restaurant stopped serving the user's favorite dish!
     # 2.4 TODO: Remove the `favorite_dish` key/value pair from the dictionary
@@ -68,7 +68,7 @@ def favorite_restaurant():
     # 2.7 TODO: Print out the restaurant's new address by printing the dictionary's value 
     # for the key `address`
     print(favorite_restaurant['address'])
-    
+
 favorite_restaurant()
 
 
