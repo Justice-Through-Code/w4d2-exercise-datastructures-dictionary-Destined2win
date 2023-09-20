@@ -28,20 +28,20 @@ def explore_data():
     # "375 Valencia St, San Francisco, CA, 94113"
     print(f"{restaurant_1['address']}, {restaurant_1['city']}, {restaurant_1['state']}, {restaurant_1['zip_code']}")
 
-explore_data()
+# explore_data()
 
 
 def favorite_restaurant():
     # Let's ask the user for some information about their favorite restaurant
 
     # 2.1 TODO: Create an empty dictionary in a variable called `favorite_restaurant`
-    favorite_restaurant = {}
+    favorite_restaurant_info = {}
 
     # 2.2 TODO: Ask the user for the restaurant 
     # `name`, `address`, and their `favorite_dish`
-    favorite_restaurant['name'] = input('What is your favorite restaurant? ')
-    favorite_restaurant['address'] = input("What is the address? ")
-    favorite_restaurant['favorite_dish'] = input('What is your favorite dish? ')
+    favorite_restaurant_info['name'] = input('What is your favorite restaurant? ')
+    favorite_restaurant_info['address'] = input("What is the address? ")
+    favorite_restaurant_info['favorite_dish'] = input('What is your favorite dish? ')
     # Add all three of these as key value pairs in your new dictionary, ala:
 
     favorite_restaurant  = {
@@ -51,26 +51,26 @@ def favorite_restaurant():
         }
 
     # 2.3 TODO: Print out your dictionary to make sure it populated correctly
-    print(favorite_restaurant)
+    print(favorite_restaurant_info)
 
     # Oh no, the restaurant stopped serving the user's favorite dish!
     # 2.4 TODO: Remove the `favorite_dish` key/value pair from the dictionary
-    del favorite_restaurant['favorite_dish']
+    del favorite_restaurant_info['favorite_dish']
 
     # 2.5 TODO: Print out the dictionary again. This time, the dictionary 
     # should only contain a 'name' and 'address' for that restaurant
-    print(favorite_restaurant)
+    print(favorite_restaurant_info)
 
     # Looks like the restaurant is going through a lot of changes-- they moved!
     # 2.6 TODO: Update the address of the user's favorite restaurant to "116th & Broadway, NY 10016"
-    favorite_restaurant['address'] = "116th & Broadway, NY 10016"
+    favorite_restaurant_info['address'] = "116th & Broadway, NY 10016"
 
 
     # 2.7 TODO: Print out the restaurant's new address by printing the dictionary's value 
     # for the key `address`
-    print(favorite_restaurant['address'])
+    print(favorite_restaurant_info['address'])
 
-favorite_restaurant()
+# favorite_restaurant()
 
 
 def clean_print():
@@ -83,5 +83,5 @@ def clean_print():
     # etc etc
     for key, value in restaurant_1.items():
         print(f"{key}: {value}")
-        
-clean_print()
+
+# clean_print()
