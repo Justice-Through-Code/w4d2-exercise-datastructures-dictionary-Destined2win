@@ -27,6 +27,7 @@ def explore_data():
     # it should include the address, city, state and the zip code, with commas between them e.g.:
     # "375 Valencia St, San Francisco, CA, 94113"
     print(f"{restaurant_1['address']}, {restaurant_1['city']}, {restaurant_1['state']}, {restaurant_1['zip_code']}")
+
 explore_data()
 
 
@@ -58,6 +59,7 @@ def favorite_restaurant():
     # 2.5 TODO: Print out the dictionary again. This time, the dictionary 
     # should only contain a 'name' and 'address' for that restaurant
     print(favorite_restaurant)
+
     # Looks like the restaurant is going through a lot of changes-- they moved!
     # 2.6 TODO: Update the address of the user's favorite restaurant to "116th & Broadway, NY 10016"
     favorite_restaurant['address'] = "116th & Broadway, NY 10016"
@@ -66,6 +68,7 @@ def favorite_restaurant():
     # 2.7 TODO: Print out the restaurant's new address by printing the dictionary's value 
     # for the key `address`
     print(favorite_restaurant['address'])
+    
 favorite_restaurant()
 
 
