@@ -53,7 +53,7 @@ def favorite_restaurant():
 
     # Oh no, the restaurant stopped serving the user's favorite dish!
     # 2.4 TODO: Remove the `favorite_dish` key/value pair from the dictionary
-    favorite_restaurant.pop('favorite_dish')
+    del favorite_restaurant['favorite_dish']
 
     # 2.5 TODO: Print out the dictionary again. This time, the dictionary 
     # should only contain a 'name' and 'address' for that restaurant
